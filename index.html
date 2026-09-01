@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>CareConnect - Healthcare Support</title>
+        <link rel="stylesheet" href="style.css">   
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="logo">
+                <img src="careconnecy.png" alt="CareConnect Logo">
+            </div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#support">Support</a>
+                <a href="#volunteer">Volunteer</a>
+                <a href="#faq">FAQs</a>
+            </nav>
+        </header>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="tag">COMMUNITY • CARE • SUPPORT </p>
+                <h1>
+                    Healthcare Support,
+                    <span>When You Need It.</span>
+                </h1>
+                <p>
+                    Connecting people with healthcare assistance, volunteer, and community resources.
+                </p>
+                <div class="hero-button">
+                    <a href="#support" class="btn primary-btn">
+                        Request Support
+                    </a>
+                    <a href="#volunteer" class="btn secondary-btn">
+                        Become a Volunteer
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="mission">
+            <div class="section-heading">
+                <p>OUR MISSION</p>
+                <h2>
+                    Making Healthcare Support
+                    <span>More Accessible</span>
+                </h2>
+                <p>
+                    CareConnect is a concept platform designed to help NGOs connect People with Healthcare Support and volunteer.
+                </p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">🏥</div>
+                    <h3>Healthcare Suppport</h3>
+                    <p>
+                        Help people submit healthcare support requests and connect them with available resources.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Volunteer Network</h3>
+                    <p>
+                        Allow volunteer to register their skills and availability to support community.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💙</div>
+                    <h3>Community Care</h3>
+                    <p>
+                        Create a simple digital platform for connecting people who need help with people who can help.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="support" class="form-section">
+            <div class="form-container">
+                <div class="form-intro">
+                    <p class="section-label">NEED HELP ?</p>
+                    <h2>
+                        Request healthcare
+                        <span>Support</span>
+                    </h2>
+                    <p>
+                        FIll in the form below and our support team will review your request.
+                    </p>
+                </div>
+                <form id="supportForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+
+                            <input 
+                            type="text"
+                            id="name"
+                            placeholder="Enter your Full Name"
+                            required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+
+                            <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                            >
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your Phone Number"
+                            requried
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input
+                            input="number"
+                            id="age"
+                            placeholder="Enter your age"
+                            min="1"
+                            max="120"
+                            required
+                            >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="supportType">
+                            Types of Suppport required
+                        </label>
+                        <select id="supportType" required>
+                            <option value="">
+                                Select Support Type 
+                            </option>
+
+                            <option value="medical">
+                                Medical Assistance
+                            </option>
+
+                            <option value="Medicine">
+                                Medicine Support
+                            </option>
+
+                            <option value="transport">
+                                Healthcare Transport
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input
+                        type="text"
+                        id="location"
+                        placeholder="City/Location"
+                        required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            Tell us how we can help
+                        </label>
+                        <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Describe your support reqirement..."
+                        required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Submit Support Request
+                    </button>
+                    <div id="supportResponce" class="responce"></div>
+                </form>
+            </div>
+        </section>
+        <section id="volunteer" class="volunteer-section">
+            <div class="form-container">
+                <div class="form-intro">
+                    <p calss="section-label">JOIN OUR COMMUNITY</p>
+
+                    <h2>Become a 
+                        <span>Volunteer</span>
+                    </h2>
+                    <p>
+                        Share your skills and help us make a difference.
+                    </p>
+                </div>
+                <form id="volunteerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="volunteerName">FULL NAME</label>
+                            <input
+                            type="text"
+                            id="volunteerName"
+                            placeholder="Enter your Name"
+                            required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="volunteerEmail">Email</label>
+                            <input
+                            input="email"
+                            id="volunteerEmail"
+                            placeholder="Enter your Email"
+                            required
+                            >
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for =volunteerPhone>Phone Number</label>
+                            
+                            <input
+                            type="tel"
+                            id="volunteerPhone"
+                            placeholder="Enter Phone number"
+                            required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="skills">Skills</label>
+                            <input
+                            type="text"
+                            id="skills"
+                            placeholder="e.g. Medical,IT,Event Management"
+                            required
+                            >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="availability">Availability</label>
+                        <select id="availability" required>
+                            <option value="">
+                                Select Availability
+                            </option>
+
+                            <option value="weekdays">
+                                Weekdays
+                            </option>
+
+                            <option value="weekends">
+                                Weekends
+                            </option>
+
+                            <option value="Both">
+                                Weekdays and Weekends
+                            </option>
+
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Register as Volunteer
+                    </button>
+                    <div id="volunteerResponce" class="responce"></div>
+                </form>
+            </div>
+        </section>
+
+            <section id="faq" class="faq-section">
+
+        <div class="section-heading">
+
+            <p>SMART ASSISTANT</p>
+
+            <h2>
+                Healthcare FAQ
+                <span>Assistant</span>
+            </h2>
+
+            <p>
+                Get quick answers to common questions.
+            </p>
+
+        </div>
+
+        <div class="chat-container">
+
+            <div class="chat-header">
+                🤖 CareConnect Assistant
+            </div>
+
+            <div id="chatMessages" class="chat-messages">
+
+                <div class="bot-message">
+                    Hello! 👋 I'm the CareConnect Assistant.
+                    How can I help you?
+                </div>
+
+            </div>
+
+            <div class="quick-questions">
+
+                <button onclick="askQuestion('support')">
+                    How can I request support?
+                </button>
+
+                <button onclick="askQuestion('volunteer')">
+                    How can I volunteer?
+                </button>
+
+                <button onclick="askQuestion('response')">
+                    When will I receive a response?
+                </button>
+
+            </div>
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    id="userQuestion"
+                    placeholder="Ask a question..."
+                >
+
+                <button onclick="sendQuestion()">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+        <footer>
+            <div class="footer-content">
+
+                <h3> CareConnect</h3>
+                <p>
+                    Connecting communities with healthcare support.
+                </p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
